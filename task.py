@@ -60,7 +60,7 @@ s = sched.scheduler(time.time, time.sleep)
 def do_something(sc):
     t_list=trends(c)
     write_trends(t_list) 
-    s.enter(60, 1, do_something, (sc,))
+    s.enter(60*20, 1, do_something, (sc,))
 
 s.enter(60*20, 1, do_something, (s,))
 s.run()
