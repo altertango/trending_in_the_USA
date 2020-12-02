@@ -6,10 +6,10 @@ import os
 
 c = 'united-states'
 
-def trends(c1):
+def trends(c):
     p='in'
     page='trends24'
-    plus='united-states'
+    plus=c
     url='https://www.'+page+'.'+p+'/'+plus
     req = urllib.request.Request(
         url, 
